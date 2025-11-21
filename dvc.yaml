@@ -1,0 +1,18 @@
+stages:
+    preprocess:
+      cmd: papermill notebooks/preprocess.ipynb notebooks/preprocess_log.ipynb
+      deps:
+        - notebooks/preprocess.ipynb
+        - data/raw/Telco-Customer-Churn.csv
+      outs:
+        - data/processed/Telco_processed.csv
+        
+    train :
+      cmd: papermill notebooks/train.ipynb notebooks/train_log.ipynb
+      deps:
+        - notebooks/train.ipynb
+        - data/processed/Telco_processed.csv
+      outs:
+        - data/processed/telco_churn_with_probs.csv
+
+      

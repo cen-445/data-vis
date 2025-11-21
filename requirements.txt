@@ -22,6 +22,9 @@ joblib==1.4.2
 dvc==3.50.2
 #dvc-s3==3.0.0     # emote storage
 
+papermill
+ipykernel
+
 # Utility
 PyYAML==6.0.1
 pathlib==1.0.1
