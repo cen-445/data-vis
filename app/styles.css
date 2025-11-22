@@ -1,0 +1,78 @@
+/* --- GENEL AYARLAR --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    color: #FAFAFA; /* Genel yazı rengi: Beyaz */
+}
+
+/* --- BAŞLIKLAR --- */
+h1 {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+h2, h3 {
+    color: #FAFAFA !important;
+    font-weight: 600 !important;
+}
+
+/* --- KPI KARTLARI (METRICS) --- */
+[data-testid="stMetric"] {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* Metrik Başlığı (Label) */
+[data-testid="stMetricLabel"] {
+    color: #9CA3AF !important; /* Açık gri */
+    font-size: 0.9rem !important;
+    font-weight: 400;
+}
+
+/* Metrik Değeri (Sayılar) */
+[data-testid="stMetricValue"] {
+    color: #FFFFFF !important;
+    font-size: 2.2rem !important; 
+    font-weight: 400 !important;
+}
+
+/* Metrik Değişimi (Küçük yüzde) */
+[data-testid="stMetricDelta"] {
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+}
+
+/* --- SEKMELER (TABS) --- */
+/* Pasif sekmeler */
+button[data-baseweb="tab"] {
+    color: #9CA3AF !important;
+    font-weight: 500 !important;
+}
+
+/* Aktif sekme */
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #FF4B4B !important;
+    border-bottom-color: #FF4B4B !important;
+    background-color: transparent !important;
+    font-weight: 600 !important;
+}
+
+/* --- SIDEBAR VE FİLTRELER --- */
+/* Multiselect kutuları */
+.stMultiSelect span[data-baseweb="tag"] {
+    background-color: #FF4B4B !important;
+    color: white !important;
+}
+
+/* Sidebar başlıkları */
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {
+    color: #E5E7EB !important;
+}
+
+/* Slider Thumb (Yuvarlak tutacak) */
+div[data-testid="stSliderTickBarMin"], div[data-testid="stSliderTickBarMax"] {
+    color: #FF4B4B !important;
+}
