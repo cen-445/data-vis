@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 try:
-    from charts_x import render_x_charts
+    from charts_mehmet import render_x_charts
 except ImportError:
     render_x_charts = None
 
